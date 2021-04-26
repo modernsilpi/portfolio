@@ -1,6 +1,9 @@
 .portfolio {
     margin-top: 70px;
     text-align: center;
+    background-image: url("./navbar/vizag.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ProfilePic {
