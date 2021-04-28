@@ -1,0 +1,63 @@
+.cyberPage {
+    text-align: center;
+    padding: 50px;
+    height: fit-content;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid rgba(240, 239, 239, 0.945);
+    margin: 40px auto 20px auto;
+    background: rgba(248, 248, 248, 0.932);
+    box-shadow: 1px 1px 20px rgba(177, 176, 176, 0.938);
+}
+
+.cyberPage .info {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    text-align: left;
+}
+
+.question {
+   border: 1px solid rgba(250, 244, 161, 0.945);
+   box-shadow: 1px 1px 15px rgb(184, 183, 183);
+   background: white;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 10px;
+   width: 100%;
+}
+
+.question header {
+    display: inline-flex;
+    width: 100%;
+}
+
+.question h4 {
+    width: 90%;
+}
+
+.question p {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.question .btn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: #eae6eb;
+  float: right !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #b4345c;
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+.question .btn .plus {
+    font-size: 52px;
+}
