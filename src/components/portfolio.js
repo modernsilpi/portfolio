@@ -5,6 +5,7 @@ import { Button, Row, Col } from "react-bootstrap";
 import router from "./navbar/router.jpg";
 import website from "./navbar/website.jpg";
 import hacker from "./navbar/hacker.jpg";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
     return (
@@ -20,23 +21,23 @@ function Portfolio() {
         </div>
         <section className="cardHolder">
             <Row xs={12} md={12} lg={12} className="row">
-                <Col className="col">
-                <div className="Displaycard">
+               <Col className="col">
+               <Link className="Link" to="/cyber-security"><div className="Displaycard">
                   <img src={ hacker } alt="Cyber Security" />
                   <h2>Cyber Security</h2>
-                </div>
+                </div></Link>
                 </Col>
                 <Col className="col">
-                <div className="Displaycard">
+                <Link className="Link" to="/networks"> <div className="Displaycard">
                   <img src={ router } alt="Networking" />
                   <h2>Networking</h2>
-                </div>
+                </div></Link>
                 </Col>
                 <Col className="col">
-                <div className="Displaycard">
+                <Link className="Link" to="/web-design"><div className="Displaycard">
                   <img src={ website } alt="Web Designing" />
                   <h2>Web Designing</h2>
-                </div>
+                </div></Link>
                 </Col>
             </Row>
         </section>

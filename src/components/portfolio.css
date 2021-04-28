@@ -1,5 +1,4 @@
 .portfolio {
-    margin-top: 50px;
     text-align: center;
     background-image: url("./navbar/vizag1.jpg");
     background-repeat: no-repeat;
@@ -16,10 +15,20 @@
 
 .cardHolder {
     padding: 50px;
+    margin: 0;
 }
 
 .cardHolder .row {
 margin: 0;
+}
+
+.Link {
+text-decoration: none !important;
+color: rgba(61, 61, 61, 0.945); 
+}
+
+.Link:hover {
+    color: rgba(32, 32, 32, 0.945);
 }
 
 /*  */

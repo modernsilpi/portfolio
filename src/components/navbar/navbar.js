@@ -7,7 +7,7 @@ import './navbar.css';
 
 function Navbar1() {
   return (
-    <div>
+    <div style={{paddingBottom: "50px"}}>
       <Navbar className="navbar" bg="dark" variant="dark" fixed="top" expand="lg" centered>
         {/* <Navbar.Brand href="#home">Hemanth</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
