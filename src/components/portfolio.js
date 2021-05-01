@@ -8,6 +8,19 @@ import hacker from "./navbar/hacker.jpg";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
+
+    const insta = () => {
+        window.open("https://www.instagram.com/hemanth_vickey/","_blank");
+    }
+
+    const linkd = () => {
+        window.open("https://in.linkedin.com/in/hemanth-kumar-veeranala-967ba318a","_blank");
+    }
+
+    const fb = () => {
+        window.open("https://www.facebook.com/profile.php?id=100008232940342","_blank");
+    }
+
     return (
         <>
         <div className="portfolio" >
@@ -42,9 +55,9 @@ function Portfolio() {
             </Row>
         </section>
         <footer>
-            <p>Instagram</p>
-            <p>LinkedIn</p>
-            <p>Twitter</p>
+           <a onClick={ insta }><p>Instagram</p></a>
+           <a onClick={ linkd }><p>LinkedIn</p></a>
+           <a onclick={ fb } ><p>Facebook</p></a>
         </footer>
         </>
     )
