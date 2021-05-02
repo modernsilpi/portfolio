@@ -66,6 +66,7 @@ footer p {
     margin: 20px;
 }
 
+
 @media screen and (max-width: 420px) {
     .cardHolder {
         padding: 10px;
