@@ -12,6 +12,7 @@ const Routing = () => {
     <>
       <Switch>
         <Route exact path="/portfolio/" component={Portfolio} />
+        <Route exact path="/" component={Portfolio} />
         <Route path="/cyber-security" component={Cyber} />
         <Route path="/networks" component={Networks} />
         <Route path="/web-design" component={Webdev} />
