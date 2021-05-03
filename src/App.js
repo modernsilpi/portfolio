@@ -1,6 +1,6 @@
-import './App.css';
-import Portfolio from '../src/components/portfolio';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import Portfolio from "../src/components/portfolio";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar1 from "../src/components/navbar/navbar";
 import Cyber from "../src/components/cyber";
@@ -9,23 +9,23 @@ import Networks from "../src/components/Networks";
 
 const Routing = () => {
   return (
-  <>
-  <Switch>
-    <Route exact path="/" component={ Portfolio } />
-    <Route path="/cyber-security" component={ Cyber } />
-    <Route path="/networks" component={ Networks } />
-    <Route path="/web-design" component={ Webdev } />
-  </Switch>
-</>
-  )
-}
+    <>
+      <Switch>
+        <Route exact path="/portfolio/" component={Portfolio} />
+        <Route path="/cyber-security" component={Cyber} />
+        <Route path="/networks" component={Networks} />
+        <Route path="/web-design" component={Webdev} />
+      </Switch>
+    </>
+  );
+};
 
 function App() {
   return (
-   <BrowserRouter>
-   <Navbar1 />
-   <Routing />
-   </BrowserRouter>
+    <BrowserRouter>
+      <Navbar1 />
+      <Routing />
+    </BrowserRouter>
   );
 }
 
