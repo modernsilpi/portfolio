@@ -3,7 +3,7 @@ const questions = [
       id: 1,
       title: 'Skills Secured',
       info:
-        'Kali Linux, Linux cli, Networking, Burp suit.',
+        'Kali Linux, Linux cli, Networking, Burp suit, Owasp top 10 vulnerabilities, Bash scripting.',
     },
     {
       id: 2,

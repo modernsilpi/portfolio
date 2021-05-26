@@ -54,6 +54,10 @@ function Portfolio() {
                 </Col>
             </Row>
         </section>
+        <section>
+            {/* <h2>About me</h2> */}
+            {/* <p>I am a cyber security enthusiast and a web designer. My friends and I founded a startup called modern silpi. Modern silpi is about providing services like building web apps and mobile applications using latest technologies and deliver efficient products to our clients. </p> */}
+        </section>
         <footer>
            <a onClick={ insta }><p>Instagram</p></a>
            <a onClick={ linkd }><p>LinkedIn</p></a>
