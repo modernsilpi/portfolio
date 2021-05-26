@@ -5,3 +5,23 @@
 .webdiv h1 {
     padding-top: 30px;
 }
+
+.backBtn {
+    height: 40px;
+    width: 40px;
+    padding: 0px 5px 0px 5px;
+    font-size: 28px;
+    float: left;
+    top: 10px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 6px rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+.backBtn:hover {
+    cursor: pointer;
+}
+
+.backIcon {
+    margin-top: -8px;
+}

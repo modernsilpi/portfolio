@@ -1,9 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 .portfolio {
     text-align: center;
     background-image: url("./navbar/vizag1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
+    height: 650px;
+    padding: 70px;
+}
+
+.portfolio h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+}
+
+.portfolio p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Prompt', sans-serif;
+    color: rgb(59, 59, 59);
+    letter-spacing: 2px;
 }
 
 .ProfilePic {
@@ -60,6 +79,7 @@ footer {
     background: rgba(0, 0, 15, 0.918);
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 footer p {

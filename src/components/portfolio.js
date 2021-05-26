@@ -25,11 +25,11 @@ function Portfolio() {
         <>
         <div className="portfolio" >
             <h1>Hemanth</h1>
-            <p>Developer, Pentester.</p>
+            <p>Web Developer, Web Application Pentester.</p>
             <img src={ hemanth3 } alt="hemanth" className="ProfilePic" />
             <div>
                 <Button variant="success">Recent Projects </Button>
-                <Button style={{marginLeft: "20px"}} variant="success">Contact me</Button>
+             <Link to="/contact"> <Button style={{marginLeft: "20px"}} variant="success">Contact me</Button></Link>  
             </div>
         </div>
         <section className="cardHolder">

@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import data from './cyberData';
 import "./cyber.css";
+import { useHistory } from 'react-router-dom'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { IoIosArrowBack } from 'react-icons/io'
+
 
 const Question = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);
@@ -19,10 +22,19 @@ const Question = ({ title, info }) => {
 };
 
 
+
 function Cyber() {
     const [questions, setQuestions] = useState(data);
+    const history = useHistory()
+    
+
     return (
-        <div className="cyberPage">
+      <div>
+        <div className="backBtn" onClick={ history.goBack}>
+<IoIosArrowBack className="backIcon"/>
+            </div>
+    
+<div className="cyberPage">
             <h2>Cyber security</h2>
             <section className='info'>
           {questions.map((question) => {
@@ -32,6 +44,8 @@ function Cyber() {
           })}
         </section>
         </div>
+      </div>
+        
     )
 }
 

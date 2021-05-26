@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import data from './networkdata';
 import "./cyber.css";
+import { useHistory } from 'react-router-dom'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { IoIosArrowBack } from 'react-icons/io'
+
 
 const Question = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);
+
   return (
     <article className='question'>
       <header>
@@ -20,7 +24,15 @@ const Question = ({ title, info }) => {
 
 function Networks() {
     const [questions, setQuestions] = useState(data);
+    const history = useHistory()
+
     return (
+      <div>
+      
+        <div className="backBtn" onClick={ history.goBack}>
+<IoIosArrowBack className="backIcon"/>
+            </div>
+    
         <div className="cyberPage">
             <h2>Networks</h2>
             <section className='info'>
@@ -30,6 +42,7 @@ function Networks() {
             );
           })}
         </section>
+        </div>
         </div>
     )
 }

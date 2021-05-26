@@ -1,9 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import "./web.css";
+import { useHistory } from 'react-router-dom'
 import lettude from './navbar/lettude.jpeg';
 import cameraRentals from './navbar/cameraRentals.PNG';
 import modernsilpi from './navbar/modernsilpi.PNG';
+import { IoIosArrowBack } from 'react-icons/io'
 
 function Webdev() {
 const lettud = () => {
@@ -18,8 +20,13 @@ const dslr = () => {
     window.open("https://www.dslr4rent.com","_blank");
 }
 
+const history = useHistory()
+
     return (
         <div className="webdiv">
+            <div className="backBtn" onClick={ history.goBack}>
+<IoIosArrowBack className="backIcon"/>
+            </div>
             <h1>Web development</h1>
             <section className="cardHolder">
             <Row xs={12} md={12} lg={12} className="row">
