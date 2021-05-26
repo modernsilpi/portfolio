@@ -1,6 +1,6 @@
-import './App.css';
-import Portfolio from '../src/components/portfolio';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import Portfolio from "../src/components/portfolio";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar1 from "../src/components/navbar/navbar";
 import Cyber from "../src/components/cyber";
