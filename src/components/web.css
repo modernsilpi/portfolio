@@ -26,6 +26,14 @@
     margin-top: -8px;
 }
 
+.col {
+    margin-top: 20px;
+}
+
+.col:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width:420px) {
     .backBtn {
         margin-left: 5px;
