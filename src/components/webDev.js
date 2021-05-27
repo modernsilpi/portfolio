@@ -10,15 +10,15 @@ import { IoIosArrowBack } from 'react-icons/io'
 
 function Webdev() {
 const lettud = () => {
-    window.open("http://www.lettude.com",'_blank');
+    window.open("http://lettude.com",'_blank');
 }
 
 const ms = () => {
-    window.open("https://www.modernsilpi.com","_blank");
+    window.open("https://modernsilpi.com","_blank");
 }
 
 const dslr = () => {
-    window.open("https://www.dslr4rent.com","_blank");
+    window.open("https://dslr4rent.com","_blank");
 }
 
 const spot = () => {
