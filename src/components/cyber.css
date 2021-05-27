@@ -7,7 +7,7 @@
     border: 1px solid rgba(240, 239, 239, 0.945);
     margin: 40px auto 20px auto;
     background: rgba(248, 248, 248, 0.932);
-    box-shadow: 1px 1px 20px rgba(177, 176, 176, 0.938);
+    box-shadow: 1px 1px 7px rgba(177, 176, 176, 0.938);
 }
 
 .cyberPage .info {
@@ -43,9 +43,10 @@
 .question .btn {
   background: transparent;
   border-color: transparent;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #eae6eb;
+  /* font-size: 18px; */
   float: right !important;
   display: flex;
   align-items: center;
@@ -60,4 +61,15 @@
 
 .question .btn .plus {
     font-size: 52px;
+}
+
+@media screen and (max-width: 420px) {
+    .cyberPage {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .cyberPage .info {
+        width: 95%;
+    }
 }

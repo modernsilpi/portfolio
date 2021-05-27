@@ -6,7 +6,7 @@ import Navbar1 from "../src/components/navbar/navbar";
 import Cyber from "../src/components/cyber";
 import Webdev from "../src/components/webDev";
 import Networks from "../src/components/Networks";
-import Contact from "../src/components/contact"
+// import Contact from "../src/components/contact"
 
 const Routing = () => {
   return (
@@ -16,7 +16,7 @@ const Routing = () => {
     <Route path="/cyber-security" component={ Cyber } />
     <Route path="/networks" component={ Networks } />
     <Route path="/web-design" component={ Webdev } />
-    <Route path="/contact" component={ Contact } />
+    {/* <Route path="/contact" component={ Contact } /> */}
   </Switch>
 </>
   )

@@ -73,6 +73,27 @@ color: rgba(61, 61, 61, 0.945);
     margin: 5px 0 5px 0;
 }
 
+.about-me {
+    padding: 50px;
+    text-align: center;
+    margin: 50px auto;
+    width: 75%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(180, 180, 180);
+}
+
+.about-me h2 {
+    font-weight: 700;
+    font-family: 'Josefin sans', sans-serif;
+}
+
+.about-me p {
+    width: 75%;
+    margin: 15px auto;
+    font-weight: 500;
+    text-shadow: 1px 1px rgb(224, 224, 224);
+}
+
 footer {
     display: inline-flex;
     padding: 50px;
@@ -88,6 +109,12 @@ footer p {
 
 
 @media screen and (max-width: 420px) {
+
+    .portfolio {
+        padding: 60px 30px 30px 30px;
+        height: 750px;
+    }
+
     .cardHolder {
         padding: 10px;
     }
@@ -104,5 +131,14 @@ footer p {
 
     .cardHolder .row .col {
         margin: 10px 0 10px 0;
+    }
+
+    .about-me {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .about-me p {
+        width: 100%;
     }
 }

@@ -25,3 +25,9 @@
 .backIcon {
     margin-top: -8px;
 }
+
+@media screen and (max-width:420px) {
+    .backBtn {
+        margin-left: 5px;
+    }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import hemanth3 from './navbar/hemanth3.jpg';
 import "./portfolio.css";
 import { Button, Row, Col } from "react-bootstrap";
@@ -8,6 +8,9 @@ import hacker from "./navbar/hacker.jpg";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
+
+    const scrollRef = useRef();
+    const projRef = useRef();
 
     const insta = () => {
         window.open("https://www.instagram.com/hemanth_vickey/","_blank");
@@ -21,18 +24,26 @@ function Portfolio() {
         window.open("https://www.facebook.com/profile.php?id=100008232940342","_blank");
     }
 
+    const scrollDown = () => {
+        scrollRef.current.scrollIntoView({behavior: "smooth"})
+    }
+
+    const scrollProj = () => {
+projRef.current.scrollIntoView({behavior: "smooth"})
+    }
+
     return (
         <>
         <div className="portfolio" >
             <h1>Hemanth</h1>
             <p>Web Developer, Web Application Pentester.</p>
             <img src={ hemanth3 } alt="hemanth" className="ProfilePic" />
-            <div>
-                <Button variant="success">Recent Projects </Button>
-             <Link to="/contact"> <Button style={{marginLeft: "20px"}} variant="success">Contact me</Button></Link>  
+            <div style={{display: "inline-flex"}}>
+                <Button onClick={scrollProj} variant="success">Recent Projects </Button>
+              <Button onClick={scrollDown} style={{marginLeft: "20px"}} variant="success">Contact me</Button> 
             </div>
         </div>
-        <section className="cardHolder">
+        <section ref={projRef} className="cardHolder">
             <Row xs={12} md={12} lg={12} className="row">
                <Col className="col">
                <Link className="Link" to="/cyber-security"><div className="Displaycard">
@@ -54,11 +65,11 @@ function Portfolio() {
                 </Col>
             </Row>
         </section>
-        <section>
-            {/* <h2>About me</h2> */}
-            {/* <p>I am a cyber security enthusiast and a web designer. My friends and I founded a startup called modern silpi. Modern silpi is about providing services like building web apps and mobile applications using latest technologies and deliver efficient products to our clients. </p> */}
+        <section className="about-me">
+            <h2>About me</h2>
+            <p>I am a cyber security enthusiast and a web designer. My friends and I founded a startup called modern silpi. I have 2 years experience in html, css, javascript and jquery and 4 months experience in React.js. I spend half of my day learning and practising cyber security concepts. My goal is to crack OSCP within next 4 years.</p>
         </section>
-        <footer>
+        <footer ref={scrollRef}>
            <a onClick={ insta }><p>Instagram</p></a>
            <a onClick={ linkd }><p>LinkedIn</p></a>
            <a onclick={ fb } ><p>Facebook</p></a>
