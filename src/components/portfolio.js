@@ -37,7 +37,7 @@ projRef.current.scrollIntoView({behavior: "smooth"})
         <div className="portfolio" >
             <h1>Hemanth</h1>
             <p>Web Developer, Web Application Pentester.</p>
-            <img src={ hemanth3 } alt="hemanth" className="ProfilePic" />
+            <img src={ hemanth3 } alt="hemanth" className="ProfilePic" /><br />
             <div style={{display: "inline-flex"}}>
                 <Button onClick={scrollProj} variant="success">Recent Projects </Button>
               <Button onClick={scrollDown} style={{marginLeft: "20px"}} variant="success">Contact me</Button> 
