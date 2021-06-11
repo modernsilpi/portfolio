@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import hemanth3 from './navbar/hemanth3.jpg';
+import naveen from './navbar/naveen.png';
 import "./portfolio.css";
 import { Button, Row, Col } from "react-bootstrap";
 import photoshop from "./navbar/photoshop.jpg";
@@ -14,7 +14,7 @@ function Portfolio() {
     const projRef = useRef();
 
     const insta = () => {
-        window.open("https://www.instagram.com/hemanth_vickey/","_blank");
+        window.open("https://www.instagram.com/70956naveen/","_blank");
     }
 
     const linkd = () => {
@@ -38,7 +38,7 @@ projRef.current.scrollIntoView({behavior: "smooth"})
         <div className="portfolio" >
             <h1>Naveen kumar Atava</h1>
             <p>UI Deisgner & Illustrator.</p>
-            <img src={ hemanth3 } alt="hemanth" className="ProfilePic" /><br />
+            <img src={ naveen } alt="naveen" className="ProfilePic" /><br />
             <div style={{display: "inline-flex"}}>
                 <Button onClick={scrollProj} variant="success">Recent Projects </Button>
               <Button onClick={scrollDown} style={{marginLeft: "20px"}} variant="success">Contact me</Button> 
