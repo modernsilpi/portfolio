@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import naveen from './navbar/naveen.png';
+import naveen from './navbar/profile.jpg';
 import "./portfolio.css";
 import { Button, Row, Col } from "react-bootstrap";
 import photoshop from "./navbar/photoshop.jpg";
