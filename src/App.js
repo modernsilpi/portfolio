@@ -7,6 +7,7 @@ import Illustrator from "../src/components/illustrator";
 import Adobexd from "../src/components/adobexd";
 import Photoshop from "../src/components/photoshop";
 import Aftereffects from '../src/components/afterEffects';
+import Art from '../src/components/art-2d';
 // import Contact from "../src/components/contact"
 
 const Routing = () => {
@@ -19,6 +20,7 @@ const Routing = () => {
     <Route path="/Photoshop" component={ Photoshop } />
     <Route path="/Adobe-xd" component={ Adobexd } />
     <Route path="/After-effects" component={ Aftereffects } />
+    <Route path="/Art" component={Art} />
     {/* <Route path="/contact" component={ Contact } /> */}
   </Switch>
 </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import "./web.css";
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import ancient from './images/illustrator/ancient man.png';
 import bike from './images/illustrator/bike.png';
 import dreams from './images/illustrator/dreams.png';
@@ -13,6 +13,7 @@ import register from './images/illustrator/register5.png';
 import selectprofession from './images/illustrator/selectprfession(2).png';
 import space from './images/illustrator/Space.png';
 import whatis from './images/illustrator/whatisspotmies5.png';
+import art from './images/2d-art-board/on board screen-page-001.jpg';
 import { IoIosArrowBack } from 'react-icons/io'
 
 function Illustrator() {
@@ -48,6 +49,13 @@ const history = useHistory()
                   <h2>2D Story Board</h2>
                 </div></Link>
                 </Col> */}
+               <Col className="col">
+               <Link to="/Art"><a onClick={spot}><div className="Displaycard">
+                  <img src={ art } alt="spotmies" />
+                  {/* <h2>24Stream</h2>
+                  <p><b>Technologies:</b>Adobe XD</p> */}
+                </div></a></Link>
+                </Col>
             <Col className="col">
                <a onClick={spot}><div className="Displaycard">
                   <img src={ ancient } alt="spotmies" />
