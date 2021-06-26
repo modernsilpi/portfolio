@@ -8,6 +8,10 @@ import Adobexd from "../src/components/adobexd";
 import Photoshop from "../src/components/photoshop";
 import Aftereffects from '../src/components/afterEffects';
 import Art from '../src/components/art-2d';
+import Spotmiescard from "./components/spotmiescards";
+import Onboard from "./components/onboard";
+import Dream from "./components/dream";
+import Space from "./components/space";
 // import Contact from "../src/components/contact"
 
 const Routing = () => {
@@ -21,6 +25,10 @@ const Routing = () => {
     <Route path="/Adobe-xd" component={ Adobexd } />
     <Route path="/After-effects" component={ Aftereffects } />
     <Route path="/Art" component={Art} />
+    <Route path="/spotmiescard" component={Spotmiescard} />
+    <Route path="/Onboard" component={Onboard} />
+    <Route path="/dream" component={Dream} />
+    <Route path="/space" component={Space} />
     {/* <Route path="/contact" component={ Contact } /> */}
   </Switch>
 </>
